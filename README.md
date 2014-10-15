@@ -119,6 +119,25 @@ Original Repository: [airbnb/javascript](https://github.com/airbnb/javascript)
       type: 'alien'
     };
     ```
+  - Object declarations can be made on a single line if they are short. 
+  When an object declaration is too long to fit on one line, there must 
+  be one property per line.
+
+    ```javascript
+    // bad
+	var map = { ready: 9,
+	    when: 4, "you are": 15 };
+
+    // good
+    var map = { ready: 9, when: 4, "you are": 15 };
+
+    // good as well
+	var map = {
+	    ready: 9,
+	    when: 4,
+	    "you are": 15
+	};
+    ```
 
 **[⬆ back to top](#table-of-contents)**
 
